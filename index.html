@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMCS-Bazaar - Online Store</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>IMCS-Bazaar - Modern Online Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -18,39 +18,173 @@
             </ul>
         </nav>
     </header>
-     <div class="assignment-box">
-    <div class="assignment-content">
-      <h4>Assignment</h4>
-      <p>
-        Submitted by: Sahil Muneer<br>
-        Roll No: 2K22/CSM/100<br>
-        Department: Computer Science (Pre-Medical, Final Year)<br>
-        Subject: Web Engineering And Technologies <br>
-        Submitted to: Dr. Sir GhulShar Leghari <br>
-      </p>
+    
+    <div class="assignment-box">
+        <div class="assignment-content">
+            <h4>Assignment</h4>
+            <p>
+                Submitted by: Sahil Muneer<br>
+                Roll No: 2K22/CSM/100<br>
+                Department: Computer Science (Pre-Medical, Final Year)<br>
+                Subject: Web Engineering And Technologies<br>
+                Submitted to: Dr. Sir GhulShar Leghari<br>
+            </p>
+        </div>
     </div>
-  </div>
 
     <main class="container">
         <section class="products">
             <div class="product-grid" id="product-grid">
-                <!-- Products will be loaded dynamically -->
+                <!-- Sample Products - would be loaded dynamically in real app -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Premium Laptop</h3>
+                        <p class="product-description">High-performance laptop with 16GB RAM, 1TB SSD, and the latest processor.</p>
+                        <div class="product-price">Rs. 85,999</div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Smartphone Pro</h3>
+                        <p class="product-description">Flagship smartphone with triple camera setup and all-day battery life.</p>
+                        <div class="product-price">Rs. 42,500</div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wireless Headphones</h3>
+                        <p class="product-description">Noise-cancelling headphones with 30hr battery life and premium sound.</p>
+                        <div class="product-price">Rs. 12,999</div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-tablet-alt"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Tablet Pro</h3>
+                        <p class="product-description">10.5-inch tablet with stylus support and powerful performance.</p>
+                        <div class="product-price">Rs. 35,750</div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <aside class="cart">
             <div class="cart-header">
                 <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
-                <span class="item-count" id="item-count">0 items</span>
+                <span class="item-count" id="item-count">3 items</span>
             </div>
-            <div class="cart-items" id="cart-items"></div>
+            <div class="cart-items" id="cart-items">
+                <!-- Sample cart items -->
+                <div class="cart-item">
+                    <div class="cart-item-img">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="cart-item-details">
+                        <div class="cart-item-title">Premium Laptop</div>
+                        <div class="cart-item-price">Rs. 85,999</div>
+                    </div>
+                    <div class="cart-item-actions">
+                        <div class="quantity-control">
+                            <button class="quantity-btn">-</button>
+                            <input type="text" class="quantity" value="1" readonly>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <button class="remove-item">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="cart-item">
+                    <div class="cart-item-img">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <div class="cart-item-details">
+                        <div class="cart-item-title">Wireless Headphones</div>
+                        <div class="cart-item-price">Rs. 12,999</div>
+                    </div>
+                    <div class="cart-item-actions">
+                        <div class="quantity-control">
+                            <button class="quantity-btn">-</button>
+                            <input type="text" class="quantity" value="2" readonly>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <button class="remove-item">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="cart-summary">
                 <div class="total">
                     <span>Total:</span>
-                    <span class="amount">Rs. <span id="total">0.00</span></span>
+                    <span class="amount">Rs. <span id="total">111,997</span></span>
                 </div>
-                <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button><br><br>
-               
+                <button class="checkout-btn" onclick="checkout()">
+                    <i class="fas fa-lock"></i> Proceed to Checkout
+                </button>
             </div>
         </aside>
     </main>
@@ -59,6 +193,36 @@
         <p>&copy; 2025 IMCS-Bazaar. All rights reserved.</p>
     </footer>
 
-    <script src="js/cart.js"></script>
+    <script>
+        // Sample JavaScript for demonstration purposes
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const productCard = this.closest('.product-card');
+                const title = productCard.querySelector('.product-title').textContent;
+                const price = productCard.querySelector('.product-price').textContent;
+                
+                // Animation effect
+                this.innerHTML = '<i class="fas fa-check"></i> Added';
+                this.style.backgroundColor = 'var(--success)';
+                
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-cart-plus"></i> Add';
+                    this.style.backgroundColor = '';
+                }, 1500);
+                
+                // In a real implementation, this would update the cart
+                console.log(`Added to cart: ${title} - ${price}`);
+            });
+        });
+        
+        function checkout() {
+            alert('Checkout functionality would be implemented here!');
+        }
+        
+        // Update item count
+        const itemCount = document.getElementById('item-count');
+        const cartItems = document.querySelectorAll('.cart-item').length;
+        itemCount.textContent = `${cartItems} ${cartItems === 1 ? 'item' : 'items'}`;
+    </script>
 </body>
 </html>
