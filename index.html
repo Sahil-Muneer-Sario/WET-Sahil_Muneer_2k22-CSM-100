@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMCS-Bazaar - Modern Online Store</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">IMCS-Bazaar</div>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-shopping-bag"></i>
+                IMCS-Bazaar
+            </div>
             <ul class="nav-links">
                 <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
                 <li><a href="#"><i class="fas fa-phone"></i> Contact</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Account</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     
     <div class="assignment-box">
         <div class="assignment-content">
-            <h4>Assignment</h4>
+            <h4>Web Engineering Assignment</h4>
             <p>
                 Submitted by: Sahil Muneer<br>
                 Roll No: 2K22/CSM/100<br>
@@ -29,160 +34,39 @@
                 Subject: Web Engineering And Technologies<br>
                 Submitted to: Dr. Sir GhulShar Leghari<br>
             </p>
+            <p>
+                This e-commerce platform demonstrates modern web development techniques including responsive design, 
+                dynamic content rendering, and interactive shopping cart functionality.
+            </p>
         </div>
     </div>
 
     <main class="container">
         <section class="products">
+            <h2 class="section-title">Featured Products</h2>
             <div class="product-grid" id="product-grid">
-                <!-- Sample Products - would be loaded dynamically in real app -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <i class="fas fa-laptop"></i>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Premium Laptop</h3>
-                        <p class="product-description">High-performance laptop with 16GB RAM, 1TB SSD, and the latest processor.</p>
-                        <div class="product-price">Rs. 85,999</div>
-                        <div class="product-meta">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-cart-plus"></i> Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Smartphone Pro</h3>
-                        <p class="product-description">Flagship smartphone with triple camera setup and all-day battery life.</p>
-                        <div class="product-price">Rs. 42,500</div>
-                        <div class="product-meta">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-cart-plus"></i> Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image">
-                        <i class="fas fa-headphones"></i>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Wireless Headphones</h3>
-                        <p class="product-description">Noise-cancelling headphones with 30hr battery life and premium sound.</p>
-                        <div class="product-price">Rs. 12,999</div>
-                        <div class="product-meta">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-cart-plus"></i> Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image">
-                        <i class="fas fa-tablet-alt"></i>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Tablet Pro</h3>
-                        <p class="product-description">10.5-inch tablet with stylus support and powerful performance.</p>
-                        <div class="product-price">Rs. 35,750</div>
-                        <div class="product-meta">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-cart-plus"></i> Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                <!-- Products will be loaded dynamically -->
             </div>
         </section>
 
         <aside class="cart">
             <div class="cart-header">
                 <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
-                <span class="item-count" id="item-count">3 items</span>
+                <span class="item-count" id="item-count">0 items</span>
             </div>
             <div class="cart-items" id="cart-items">
-                <!-- Sample cart items -->
-                <div class="cart-item">
-                    <div class="cart-item-img">
-                        <i class="fas fa-laptop"></i>
-                    </div>
-                    <div class="cart-item-details">
-                        <div class="cart-item-title">Premium Laptop</div>
-                        <div class="cart-item-price">Rs. 85,999</div>
-                    </div>
-                    <div class="cart-item-actions">
-                        <div class="quantity-control">
-                            <button class="quantity-btn">-</button>
-                            <input type="text" class="quantity" value="1" readonly>
-                            <button class="quantity-btn">+</button>
-                        </div>
-                        <button class="remove-item">
-                            <i class="fas fa-trash"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="cart-item">
-                    <div class="cart-item-img">
-                        <i class="fas fa-headphones"></i>
-                    </div>
-                    <div class="cart-item-details">
-                        <div class="cart-item-title">Wireless Headphones</div>
-                        <div class="cart-item-price">Rs. 12,999</div>
-                    </div>
-                    <div class="cart-item-actions">
-                        <div class="quantity-control">
-                            <button class="quantity-btn">-</button>
-                            <input type="text" class="quantity" value="2" readonly>
-                            <button class="quantity-btn">+</button>
-                        </div>
-                        <button class="remove-item">
-                            <i class="fas fa-trash"></i>
-                        </button>
-                    </div>
+                <div class="empty-cart-message">
+                    <i class="fas fa-shopping-basket" style="font-size: 3rem; margin-bottom: 1rem; color: #ccc;"></i>
+                    <p>Your cart is empty</p>
+                    <p>Add some products to get started!</p>
                 </div>
             </div>
             <div class="cart-summary">
                 <div class="total">
                     <span>Total:</span>
-                    <span class="amount">Rs. <span id="total">111,997</span></span>
+                    <span class="amount">Rs. <span id="total">0.00</span></span>
                 </div>
-                <button class="checkout-btn" onclick="checkout()">
+                <button class="checkout-btn" id="checkout-btn">
                     <i class="fas fa-lock"></i> Proceed to Checkout
                 </button>
             </div>
@@ -190,39 +74,287 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 IMCS-Bazaar. All rights reserved.</p>
+        <p>&copy; 2025 IMCS-Bazaar. All rights reserved. | Computer Science Project | Web Engineering</p>
     </footer>
 
     <script>
-        // Sample JavaScript for demonstration purposes
-        document.querySelectorAll('.add-to-cart').forEach(button => {
-            button.addEventListener('click', function() {
-                const productCard = this.closest('.product-card');
-                const title = productCard.querySelector('.product-title').textContent;
-                const price = productCard.querySelector('.product-price').textContent;
-                
-                // Animation effect
-                this.innerHTML = '<i class="fas fa-check"></i> Added';
-                this.style.backgroundColor = 'var(--success)';
-                
-                setTimeout(() => {
-                    this.innerHTML = '<i class="fas fa-cart-plus"></i> Add';
-                    this.style.backgroundColor = '';
-                }, 1500);
-                
-                // In a real implementation, this would update the cart
-                console.log(`Added to cart: ${title} - ${price}`);
-            });
-        });
-        
-        function checkout() {
-            alert('Checkout functionality would be implemented here!');
-        }
-        
-        // Update item count
+        // Product data
+        const products = [
+            {
+                id: 1,
+                name: "Premium Laptop",
+                description: "High-performance laptop with 16GB RAM, 1TB SSD, and the latest processor for all your computing needs.",
+                price: 85999,
+                icon: "fas fa-laptop",
+                rating: 4.5,
+                badge: "Best Seller"
+            },
+            {
+                id: 2,
+                name: "Smartphone Pro",
+                description: "Flagship smartphone with triple camera setup, 128GB storage, and all-day battery life.",
+                price: 42500,
+                icon: "fas fa-mobile-alt",
+                rating: 4.2,
+                badge: "New"
+            },
+            {
+                id: 3,
+                name: "Wireless Headphones",
+                description: "Noise-cancelling headphones with 30hr battery life, premium sound quality, and comfortable fit.",
+                price: 12999,
+                icon: "fas fa-headphones",
+                rating: 4.8,
+                badge: "Sale"
+            },
+            {
+                id: 4,
+                name: "Tablet Pro",
+                description: "10.5-inch tablet with stylus support, powerful performance, and stunning retina display.",
+                price: 35750,
+                icon: "fas fa-tablet-alt",
+                rating: 4.0,
+                badge: "Limited"
+            },
+            {
+                id: 5,
+                name: "Smart Watch",
+                description: "Feature-packed smartwatch with health monitoring, GPS, and waterproof design for active lifestyles.",
+                price: 18999,
+                icon: "fas fa-clock",
+                rating: 4.6,
+                badge: "Popular"
+            },
+            {
+                id: 6,
+                name: "DSLR Camera",
+                description: "Professional DSLR camera with 24MP sensor, 4K video, and interchangeable lenses.",
+                price: 65999,
+                icon: "fas fa-camera",
+                rating: 4.7,
+                badge: "Pro"
+            }
+        ];
+
+        // Cart state
+        let cart = [];
+        let total = 0;
+
+        // DOM elements
+        const productGrid = document.getElementById('product-grid');
+        const cartItems = document.getElementById('cart-items');
         const itemCount = document.getElementById('item-count');
-        const cartItems = document.querySelectorAll('.cart-item').length;
-        itemCount.textContent = `${cartItems} ${cartItems === 1 ? 'item' : 'items'}`;
+        const totalElement = document.getElementById('total');
+        const checkoutBtn = document.getElementById('checkout-btn');
+
+        // Initialize the store
+        function initStore() {
+            renderProducts();
+            renderCart();
+        }
+
+        // Render products
+        function renderProducts() {
+            productGrid.innerHTML = '';
+            
+            products.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.innerHTML = `
+                    <div class="product-image">
+                        <i class="${product.icon}"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">${product.name}</h3>
+                        <p class="product-description">${product.description}</p>
+                        <div class="product-price">Rs. ${product.price.toLocaleString()}</div>
+                        <div class="product-meta">
+                            <div class="rating">
+                                ${renderRating(product.rating)}
+                            </div>
+                            <button class="add-to-cart" data-id="${product.id}">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    ${product.badge ? `<div class="product-badge">${product.badge}</div>` : ''}
+                `;
+                
+                productGrid.appendChild(productCard);
+            });
+            
+            // Add event listeners to add-to-cart buttons
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const productId = parseInt(e.target.closest('.add-to-cart').dataset.id);
+                    addToCart(productId);
+                });
+            });
+        }
+
+        // Render star rating
+        function renderRating(rating) {
+            let stars = '';
+            const fullStars = Math.floor(rating);
+            const halfStar = rating % 1 >= 0.5;
+            
+            for (let i = 0; i < fullStars; i++) {
+                stars += '<i class="fas fa-star"></i>';
+            }
+            
+            if (halfStar) {
+                stars += '<i class="fas fa-star-half-alt"></i>';
+            }
+            
+            const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
+            for (let i = 0; i < emptyStars; i++) {
+                stars += '<i class="far fa-star"></i>';
+            }
+            
+            return stars;
+        }
+
+        // Add to cart
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            
+            // Check if product is already in cart
+            const existingItem = cart.find(item => item.id === productId);
+            
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cart.push({
+                    ...product,
+                    quantity: 1
+                });
+            }
+            
+            // Update cart
+            renderCart();
+            
+            // Visual feedback
+            const button = document.querySelector(`.add-to-cart[data-id="${productId}"]`);
+            button.innerHTML = '<i class="fas fa-check"></i> Added!';
+            button.style.backgroundColor = 'var(--success)';
+            
+            setTimeout(() => {
+                button.innerHTML = '<i class="fas fa-cart-plus"></i> Add to Cart';
+                button.style.backgroundColor = '';
+            }, 1500);
+        }
+
+        // Render cart
+        function renderCart() {
+            // Update total
+            total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            totalElement.textContent = total.toLocaleString('en-IN');
+            
+            // Update item count
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            itemCount.textContent = `${totalItems} ${totalItems === 1 ? 'item' : 'items'}`;
+            
+            // Render cart items
+            if (cart.length === 0) {
+                cartItems.innerHTML = `
+                    <div class="empty-cart-message">
+                        <i class="fas fa-shopping-basket" style="font-size: 3rem; margin-bottom: 1rem; color: #ccc;"></i>
+                        <p>Your cart is empty</p>
+                        <p>Add some products to get started!</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            cartItems.innerHTML = '';
+            
+            cart.forEach(item => {
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item';
+                cartItem.innerHTML = `
+                    <div class="cart-item-img">
+                        <i class="${item.icon}"></i>
+                    </div>
+                    <div class="cart-item-details">
+                        <div class="cart-item-title">${item.name}</div>
+                        <div class="cart-item-price">Rs. ${(item.price * item.quantity).toLocaleString()}</div>
+                    </div>
+                    <div class="cart-item-actions">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus" data-id="${item.id}">-</button>
+                            <input type="text" class="quantity" value="${item.quantity}" readonly>
+                            <button class="quantity-btn plus" data-id="${item.id}">+</button>
+                        </div>
+                        <button class="remove-item" data-id="${item.id}">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                `;
+                
+                cartItems.appendChild(cartItem);
+            });
+            
+            // Add event listeners
+            document.querySelectorAll('.quantity-btn.minus').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const id = parseInt(e.target.dataset.id);
+                    updateQuantity(id, -1);
+                });
+            });
+            
+            document.querySelectorAll('.quantity-btn.plus').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const id = parseInt(e.target.dataset.id);
+                    updateQuantity(id, 1);
+                });
+            });
+            
+            document.querySelectorAll('.remove-item').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const id = parseInt(e.target.closest('.remove-item').dataset.id);
+                    removeFromCart(id);
+                });
+            });
+        }
+
+        // Update quantity
+        function updateQuantity(productId, change) {
+            const item = cart.find(item => item.id === productId);
+            
+            if (item) {
+                item.quantity += change;
+                
+                if (item.quantity <= 0) {
+                    removeFromCart(productId);
+                } else {
+                    renderCart();
+                }
+            }
+        }
+
+        // Remove from cart
+        function removeFromCart(productId) {
+            cart = cart.filter(item => item.id !== productId);
+            renderCart();
+        }
+
+        // Checkout
+        function checkout() {
+            if (cart.length === 0) {
+                alert('Your cart is empty!');
+                return;
+            }
+            
+            alert(`Order placed successfully!\nTotal: Rs. ${total.toLocaleString()}\nThank you for your purchase!`);
+            cart = [];
+            renderCart();
+        }
+
+        // Event listeners
+        checkoutBtn.addEventListener('click', checkout);
+
+        // Initialize the store
+        document.addEventListener('DOMContentLoaded', initStore);
     </script>
 </body>
 </html>
